@@ -512,6 +512,7 @@ hr {
         -ms-flex-align: start;
             align-items: start;
     text-align: start;
+    padding: 0 10%;
   }
   .main main .section-advanced-statistics .grid-items .grid-item {
     min-height: 20rem;
