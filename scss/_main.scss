@@ -34,13 +34,13 @@
         }
 
         .section-shorten-url {
-            background-color: lighten(map-get($map: $color, $key: primaryFontColor), $amount: 30);
+            background-color: lighten($color: hsl(257, 7%, 63%), $amount: 30);
 
             .shorten-bg {
                 width: 100%;
                 height: 100%;
                 padding: 3rem 1rem;
-                background: url('../images/bg-shorten-mobile.svg') no-repeat center;
+                background: url('../../images/bg-shorten-mobile.svg') no-repeat center;
                 background-position: 7rem -7rem;
                 background-size: cover;
             }
@@ -153,7 +153,7 @@
             background-color: map-get($map: $color, $key: secondaryColor);
 
             .background-layer {
-                background: url("../images/bg-boost-mobile.svg") no-repeat;
+                background: url("../../images/bg-boost-mobile.svg") no-repeat;
                 background-size: cover;
                 text-align: center;
                 color: white;
@@ -169,6 +169,23 @@
                         font-size: 1.2rem;
                         font-weight: 900;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 512px) {
+    .main {
+        main {
+            .section-advanced-statistics {
+                .grid-items {
+                    .grid-item {
+                        .img-cover {
+                            margin-top: -4rem;
+                        }
+                    }
+                
                 }
             }
         }
@@ -228,8 +245,9 @@
                         align-items: center;
                         border-radius: 1rem;
                         padding: 4rem;
-                        background: url('../images/bg-shorten-desktop.svg') no-repeat center;
+                        background: url('../../images/bg-shorten-desktop.svg') no-repeat center;
                         background-size: cover;
+
                         .shorten-input {
                             flex: 1;
                             margin-right: 1rem;
@@ -252,13 +270,16 @@
                     align-items: start;
                     text-align: start;
                     padding: 0 10%;
+
                     .grid-item {
                         min-height: 20rem;
                         align-items: start;
-                        padding: 3rem;
-                        .img-cover{
-                            margin-top: -12rem;
+                        padding: 2rem;
+
+                        .img-cover {
+                            margin-top: -6rem;
                         }
+
                         &::after {
                             position: absolute;
                             content: '';
@@ -284,8 +305,25 @@
 
             .section-boost {
                 .background-layer {
-                    background: url("../images/bg-boost-desktop.svg") no-repeat;
+                    background: url("../../images/bg-boost-desktop.svg") no-repeat;
                     background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .main {
+        main {
+            .section-advanced-statistics {
+                .grid-items {
+                    .grid-item {
+                        .img-cover {
+                            margin-top: -8rem;
+                        }
+                    }
+                
                 }
             }
         }

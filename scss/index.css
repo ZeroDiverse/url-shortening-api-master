@@ -105,7 +105,7 @@ a {
 }
 
 .header header .navbar .navbar-right {
-  display: none;
+  display: block;
   position: absolute;
   width: 90%;
   top: 7rem;
@@ -119,11 +119,13 @@ a {
   border-radius: 1rem;
   text-align: center;
   padding: 1rem 0;
+  z-index: 10000;
 }
 
 .header header .navbar .navbar-right ul {
   width: 100%;
-  padding: 0 0 0 5%;
+  padding: 0 5%;
+  margin: 0;
 }
 
 .header header .navbar .navbar-right ul li {
@@ -132,7 +134,7 @@ a {
 
 .header header .navbar .navbar-right ul li a {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .header header .navbar .navbar-right ul button {
@@ -174,6 +176,10 @@ hr {
   }
   .header header .navbar .navbar-right ul hr {
     display: none;
+  }
+  .header header .navbar .navbar-right ul .left li a {
+    color: #bfbfbf;
+    font-weight: 700;
   }
   .header header .navbar .navbar-right ul .right {
     display: -webkit-box;
@@ -226,14 +232,14 @@ hr {
 }
 
 .main main .section-shorten-url {
-  background-color: white;
+  background-color: #edecee;
 }
 
 .main main .section-shorten-url .shorten-bg {
   width: 100%;
   height: 100%;
   padding: 3rem 1rem;
-  background: url("../images/bg-shorten-mobile.svg") no-repeat center;
+  background: url("../../images/bg-shorten-mobile.svg") no-repeat center;
   background-position: 7rem -7rem;
   background-size: cover;
 }
@@ -366,7 +372,7 @@ hr {
 }
 
 .main main .section-boost .background-layer {
-  background: url("../images/bg-boost-mobile.svg") no-repeat;
+  background: url("../../images/bg-boost-mobile.svg") no-repeat;
   background-size: cover;
   text-align: center;
   color: white;
@@ -446,7 +452,7 @@ hr {
             align-items: center;
     border-radius: 1rem;
     padding: 4rem;
-    background: url("../images/bg-shorten-desktop.svg") no-repeat center;
+    background: url("../../images/bg-shorten-desktop.svg") no-repeat center;
     background-size: cover;
   }
   .main main .section-shorten-url .shorten-url .shorten-bg .shorten-input {
@@ -475,7 +481,7 @@ hr {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    padding: 3rem;
+    padding: 2rem;
   }
   .main main .section-advanced-statistics .grid-items .grid-item .img-cover {
     margin-top: -6rem;
@@ -499,7 +505,7 @@ hr {
     margin-top: 15rem;
   }
   .main main .section-boost .background-layer {
-    background: url("../images/bg-boost-desktop.svg") no-repeat;
+    background: url("../../images/bg-boost-desktop.svg") no-repeat;
     background-size: cover;
   }
 }

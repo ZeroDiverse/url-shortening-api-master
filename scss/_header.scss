@@ -40,7 +40,7 @@
             }
 
             .navbar-right {
-                display: none;
+                display: block;
                 position: absolute;
                 width: 90%;
                 top: 7rem;
@@ -52,15 +52,17 @@
                 border-radius: 1rem;
                 text-align: center;
                 padding: 1rem 0;
+                z-index: 10000;
                 ul {
                     width: 100%;
-                    padding: 0 0 0 5%;
+                    padding: 0 5%;
+                    margin: 0;
                     li {
                         margin: 2.8rem auto;
 
                         a {
                             color: #ffffff;
-                            font-size: 1.5rem;
+                            font-size: 1.2rem;
                         }
                     }
 
@@ -110,6 +112,15 @@ hr {
 
                         hr {
                             display: none;
+                        }
+
+                        .left{
+                            li{
+                                a{
+                                    color: darken(map-get($map: $color, $key: primaryFontColor2), 0);
+                                    font-weight: 700;
+                                }
+                            }
                         }
 
                         .right {
