@@ -461,8 +461,13 @@ hr {
             flex: 1;
     margin-right: 1rem;
   }
+  .main main .section-shorten-url .shorten-url .shorten-bg .shorten-input input {
+    height: 4rem;
+  }
   .main main .section-shorten-url .shorten-url .shorten-bg .shorten-btn button {
     margin-top: 0;
+    height: 4rem;
+    font-size: 1.6rem;
   }
   .main main .section-advanced-statistics .grid-items {
     margin-top: 4rem;
@@ -490,7 +495,7 @@ hr {
     position: absolute;
     content: '';
     background-color: #2acfcf;
-    width: 8rem;
+    width: 12rem;
     height: 8px;
     left: 100%;
     top: 50%;
