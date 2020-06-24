@@ -1,0 +1,22 @@
+@import './colors';
+
+.btn {
+    border: 0;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    @extend .btn;
+    background-color: map-get($map: $color, $key: primaryColor);
+    color: map-get($map: $color, $key: primaryFontColor);
+
+    a {
+        color: map-get($map: $color, $key: primaryFontColor);
+    }
+
+    &:hover {
+        background-color: lighten($color: map-get($map: $color, $key: primaryColor), $amount: 10);
+    }
+}

@@ -1,0 +1,133 @@
+
+.header {
+    header {
+        .navbrand {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            a {
+                height: 100%;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 3rem 5%;
+            position: relative;
+
+            .collapse {
+                margin-left: auto;
+                border: 0;
+                background-color: transparent;
+
+                svg {
+                    fill: hsl(0, 0%, 75%) !important;
+                }
+
+
+                &:focus {
+                    outline: 0;
+
+                    + {
+                        .navbar-right {
+                            display: flex !important;
+                            z-index: 1000;
+                        }
+                    }
+                }
+            }
+
+            .navbar-right {
+                display: none;
+                position: absolute;
+                width: 90%;
+                top: 7rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                justify-content: center;
+                background-color: map-get($map: $color, $key: secondaryColor);
+                border-radius: 1rem;
+                text-align: center;
+                padding: 1rem 0;
+                ul {
+                    width: 100%;
+                    padding: 0 0 0 5%;
+                    li {
+                        margin: 2.8rem auto;
+
+                        a {
+                            color: #ffffff;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+
+                        a {
+                            color: #ffffff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+hr {
+    border-top: 1px hsl(0, 0%, 75%) solid;
+    border-bottom: 0;
+}
+
+//Media query for header
+@media only screen and (min-width: 1024px) {
+    .header {
+        header {
+            .navbar {
+                width: 90%;
+                margin: auto;
+
+                .collapse {
+                    display: none;
+                }
+
+                .navbar-right {
+                    display: block;
+                    position: static;
+                    background-color: transparent;
+
+                    ul {
+                        display: flex;
+
+                        .left {
+                            display: flex;
+                            margin-left: 0;
+                        }
+
+                        hr {
+                            display: none;
+                        }
+
+                        .right {
+                            display: flex;
+                            margin-left: auto;
+                        }
+
+                        li {
+                            margin: auto 1rem;
+
+                            a {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
