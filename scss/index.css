@@ -7,6 +7,17 @@
   padding-bottom: 2rem;
 }
 
+.absolute {
+  display: none;
+  position: absolute;
+  left: 0;
+  color: #f46262 !important;
+}
+
+.relative {
+  position: relative;
+}
+
 .btn, .btn-primary, .main main .section-shorten-url .shorten-url button {
   border: 0;
   padding: 1rem 3rem;

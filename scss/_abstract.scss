@@ -5,3 +5,14 @@
 .pb-2 {
     padding-bottom: 2rem;
 }
+
+.absolute{
+    display: none;
+    position: absolute;
+    left: 0;
+    color: hsl(0, 87%, 67%) !important;
+}
+
+.relative{
+    position: relative;
+}

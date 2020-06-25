@@ -7,8 +7,11 @@ let btn = document.querySelector('#shorten-btn');
 btn.addEventListener('click', () => {
     if (document.querySelector('.shorten-input-precis').validity.valid == false) {
         document.querySelector('.shorten-input-precis').classList.add('not-valid');
+        document.querySelector('.absolute').style.display = 'block';
     }
     else {
+        document.querySelector('.absolute').style.display = 'none';
+        document.querySelector('.shorten-input-precis').classList.remove('not-valid');
         let url = document.querySelector('.shorten-input-precis').value;
         if(url.startsWith('https://')){
             url = url.slice(8);
@@ -16,7 +19,6 @@ btn.addEventListener('click', () => {
         const rawResponse = fetch(`https://url-shortening-api-master-back.herokuapp.com/${url}`, {
             method: 'POST',
         });
-        document.querySelector('.shorten-input-precis').classList.remove('not-valid');
         refresh();
     }
 });
