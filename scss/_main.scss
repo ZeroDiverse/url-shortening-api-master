@@ -220,11 +220,11 @@
                     margin-bottom: 3rem;
 
                     h1 {
-                        font-size: 4rem;
+                        font-size: 3.6rem;
                     }
 
                     p {
-                        font-size: 1.7rem;
+                        font-size: 1.5rem;
                     }
                 }
 
@@ -267,8 +267,9 @@
             }
 
             .section-advanced-statistics {
+                padding-bottom: 0;
                 .grid-items {
-                    margin-top: 4rem;
+                    //margin-top: 4rem;
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     align-items: start;

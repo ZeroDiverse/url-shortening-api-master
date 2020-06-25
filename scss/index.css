@@ -37,9 +37,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   overflow-x: hidden;
-  height: 100%;
 }
 
 h1 {
@@ -56,6 +55,13 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  body,
+  html {
+    font-size: 14px;
+  }
 }
 
 .header header .navbrand {
@@ -427,10 +433,10 @@ hr {
     margin-bottom: 3rem;
   }
   .main main .introduction .intro-desc h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
   .main main .introduction .intro-desc p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .main main .introduction .intro-btn {
     text-align: start;
@@ -469,8 +475,10 @@ hr {
     height: 4rem;
     font-size: 1.6rem;
   }
+  .main main .section-advanced-statistics {
+    padding-bottom: 0;
+  }
   .main main .section-advanced-statistics .grid-items {
-    margin-top: 4rem;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
