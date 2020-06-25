@@ -10,7 +10,7 @@
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
-  <link rel="stylesheet" href="dist/css/index.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -97,13 +97,38 @@
           <div class="shorten-url">
             <div class="shorten-bg">
               <div class="shorten-input">
-                <input type="text" name="url" id="url" placeholder="Shorten a link here...">
+                <input class="shorten-input-precis" type="text" name="url" id="url" placeholder="Shorten a link here..." required>
               </div>
               <div class="shorten-btn">
-                <button>Shorten it!</button>
+                <button id="shorten-btn">Shorten it!</button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="shorten-url-collections">
+          <!--
+                      <div class="shorten-url-collection">
+            <p>https://www.google.com</p>
+            <div class="shorten-url-main">
+              <p><a class="link">https://ze.link/k4lKyk</a></p>
+              <button class="copy">Copy</button>
+            </div>
+          </div>
+          <div class="shorten-url-collection">
+            <p>https://www.google.com</p>
+            <div class="shorten-url-main">
+              <p><a class="link">https://ze.link/k5lKyk</a></p>
+              <button class="copy">Copy</button>
+            </div>
+          </div>
+          <div class="shorten-url-collection">
+            <p>https://www.google.com</p>
+            <div class="shorten-url-main">
+              <p><a class="link">https://ze.link/k6lKyk</a></p>
+              <button class="copy">Copy</button>
+            </div>
+          </div>
+          -->
         </div>
       </section>
       <!--Shorten URL-->
@@ -217,6 +242,7 @@
     </footer>
   </div>
   <!--Footer-->
+  <script src="js/index.js"></script>
 </body>
 
 </html>
