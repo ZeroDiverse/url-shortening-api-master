@@ -105,17 +105,13 @@
                 }
 
                 .shorten-url-collection {
-                    display: flex;
-                    justify-content: space-between;
                     background-color: #ffffff;
                     border-radius: 0.25rem;
                     margin: 1rem auto;
                     padding: 0.5rem 2rem;
+                    height: 12rem;
                     .shorten-url-main{
-                        display: flex;
-                        p{
-                            margin: auto 1rem;
-                        }
+
                         button{
                             background-color: map-get($map: $color, $key: primaryColor);
                             color: #ffffff;
@@ -123,6 +119,7 @@
                             border-radius: 0.5rem;
                             margin: 0.25rem auto;
                             width: 8rem;
+                            min-height: 3rem;
                             text-align: center;
                         }
                     }
@@ -270,6 +267,21 @@
             }
 
             .section-shorten-url {
+                .shorten-url-collections{
+                    .shorten-url-collection{
+                        display: flex;
+                        height: initial;
+                        justify-content: space-between;
+                        .shorten-url-main{
+                            display: flex;
+                        }
+                        p{
+                            margin: auto 1rem;
+                        }
+
+
+                    }
+                }
                 .shorten-url {
                     width: 80%;
                     margin: auto;
